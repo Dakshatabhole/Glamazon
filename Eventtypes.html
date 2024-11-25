@@ -1,0 +1,50 @@
+<html>
+<body>
+
+<p><b>onchange</b></p>
+<select id="mySelect" onchange="myFunction()">
+  <option value="ShadowPort">ShadowPort</option>
+  <option value="Tenebrae">Tenebrae</option>
+  <option value="Gladestone">Gladestone</option>
+  <option value="Bayfjord">Bayfjord</option>
+</select>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value
+}
+</script>
+
+<p><b>onclick</b></p>
+<button onclick="myFunction()">See This</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello!!!!!";
+}
+</script>
+
+<p><b>onmouseover</b></p>
+<p id="abc" onmouseover="mouseOver()" onmouseout="mouseOut()">DarkVerse</p>
+<script>
+function mouseOver() {
+  document.getElementById("abc").style.color = "red";
+}
+function mouseOut() {
+  document.getElementById("abc").style.color = "black";
+}
+</script>
+
+<p><b>onkeydown</b></p>
+<input type="text" onkeydown="myFunction()">
+<p id="demo"></p>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "You pressed a key inside the input field";
+}
+</script>
+
+</body>
+</html>
